@@ -14,7 +14,7 @@ In this lab you will:
 
 ♻️ Import and Export tokens between chains
 
-1. With your Gitpod ready to use (you may need to select `Pathways`), within the Sample Browser tab, scroll down until you see the Chains listing.
+1. With your Gitpod ready to use (you may need to select `Pathways`), within the **Simple Browser** tab, scroll down until you see the Chains listing.
 
 2. Select **Avalanche**.
 
@@ -24,13 +24,13 @@ In this lab you will:
 
 1. Read the overview instructions that appear for the Pathway. This first step does not require you to make any code changes, it's just an overview of the approach so you know what to expect.
 
-2. When you've finished reading the overview, look for a large navigation button labeled **Setup the project** near the bottom right of the Sample Browser panel and select that.
+2. When you've finished reading the overview, look for a large navigation button labeled **Setup the project** near the bottom right of the **Simple Browser** panel and select that.
 
     ![Graphical user interface, text, application, email Description automatically generated](./images/media/image31.png)
 
 ## Setup the project
 
-1. Right click the **Signup for a DataHub account** link and select to open that in new tab in your browser.
+1. Right click the **Signup for a DataHub account** [link](https://datahub.figment.io/signup) and select to open that in new tab in your browser.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image11.png)
 
@@ -62,11 +62,11 @@ In this lab you will:
 
    1. Switch back to the gitpod.
 
-   2. From the left treeview of the Gitpod environment under the root folder /learn-web3-dapp locate the `.env.example` file.
+   2. From the left treeview of the Gitpod environment under the root folder `/learn-web3-dapp` locate the `.env.example` file.
 
    3. Right click the file and select **Rename**. Change the name to just `.env.local`
 
-   4. Double click the .env.local file to open it in a new editor panel.
+   4. Double click the `.env.local` file to open it in a new editor panel.
 
     ![Graphical user interface, application Description automatically generated](./images/media/image16.png)
 
@@ -78,7 +78,7 @@ In this lab you will:
 
 ## Connect to Avalanche
 
-1. Follow the instructions.
+1. Follow the instructions to edit the `connect.ts` file.
 
 2. In the **Network** dropdown, make sure to select the **Testnet** network before selecting connect otherwise you will see a 500 error (meaning unauthorized).
 
@@ -90,7 +90,7 @@ In this lab you will:
 
 ## Create a keypair
 
-1. Follow the instructions. When complete you should see something like:
+1. Follow the instructions to edit the `account.ts`. When complete you should see something like:
 
     ![Graphical user interface, text, application Description automatically generated](./images/media/image33.png)
 
@@ -102,13 +102,11 @@ In this lab you will:
 
     ![Graphical user interface, application Description automatically generated](./images/media/image35.png)
 
-4. Return to the Gitpod window.
-
-5. Select the navigation button **Get the balance** to continue.
+4. Return to the Gitpod window, select the navigation button **Get the balance** to continue.
 
 ## Get the balance
 
-1. Follow the instructions. When complete you should see something like:
+1. Follow the instructions to edit the `balance.ts` file. When complete you should see something like:
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image36.png)
 
@@ -116,7 +114,7 @@ In this lab you will:
 
 ## Transfer some AVAX
 
-1. Follow the instructions. When complete you should see something like:
+1. Follow the instructions to edit the `transfer.ts`. When complete you should see something like:
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image37.png)
 
@@ -131,7 +129,7 @@ two outputs. Can you explain why?
 
 ## Export tokens from X-Chain to C-Chain
 
-1. Follow the instructions. When complete you should see something like:
+1. Follow the instructions to edit the `export.ts` file. When complete you should see something like:
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image39.png)
 
@@ -139,7 +137,7 @@ two outputs. Can you explain why?
 
 ## Import tokens from X-Chain to C-Chain
 
-1. Follow the instructions. When complete you should see something like:
+1. Follow the instructions to edit the `import.ts` file. When complete you should see something like:
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image40.png)
 

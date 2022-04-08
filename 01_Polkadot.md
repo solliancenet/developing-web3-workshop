@@ -29,13 +29,13 @@ open
 
 1. Read the overview instructions that appear for the Pathway. This first step does not require you to make any code changes, it's just an overview of the approach so you know what to expect.
 
-2. When you've finished reading the overview, look for a large navigation button labeled **Setup the Project** near the bottom right of the Sample Browser panel and select that.
+2. When you've finished reading the overview, look for a large navigation button labeled **Setup the Project** near the bottom right of the **Simple Browser** panel and select that.
 
     ![Graphical user interface, text, application, email Description automatically generated](./images/media/image10.png)
 
 ## Setup the project
 
-1. Right click the **Signup for a DataHub account** link and select to open that in new tab in your browser.
+1. Right click the **Signup for a DataHub account** [link](https://datahub.figment.io/signup) and select to open that in new tab in your browser.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image11.png)
 
@@ -63,27 +63,27 @@ open
     - Select **View key**
     - Copy the key
 
-6. When you have copied the key, you will to create a .env file in which to store it. Follow these steps:
+6. When you have copied the key, you will to create a `.env.local` file in which to store it. Follow these steps:
 
    1. Switch back to the gitpod.
 
-   2. From the left treeview of the Gitpod environment under the root folder /learn-web3-dapp locate the `.env.example` file.
+   2. From the left treeview of the Gitpod environment under the root folder `\learn-web3-dapp` locate the `.env.example` file.
 
-   3. Right click the file and select **Rename**. Change the name to just `.env`
+   3. Right click the file and select **Rename**. Change the name to `.env.local`
 
-   4. Double click the .env file to open it in a new editor panel.
+   4. Double click the `.env` file to open it in a new editor panel.
 
     ![Graphical user interface, application Description automatically generated](./images/media/image16.png)
 
-7. Paste your key as the value for the `DATAHUB_POLKADOT_API_KEY` and close the `.env` tab.
+7. Paste your key as the value for the `DATAHUB_POLKADOT_API_KEY` and close the `.env.local` tab.
 
     > NOTE: Whenever the instructions tell you edit code, look for the code file in the Explorer tree view just as you did for the `.env.example` file.
 
-8. Select the navigation button **Connect to Polkadot** to continue.
+8. Switch back to the **Simple Browser**, select the navigation button **Connect to Polkadot** to continue.
 
 ## Connect to Polkadot
 
-1. In the **Connect to Polkadot** window, follow the instructions to edit your copy of connect.ts (remember you can find this file using the Explorer in the Gitpod interface, under
+1. In the **Connect to Polkadot** pathway window, follow the instructions to edit your copy of `connect.ts` (you can find this file using the Explorer in the Gitpod interface, under
 `/pages/api/Polkadot`).
 
 2. When you have completed the code, select the **Connect to Polkadot** button. If all went well you should see a shower of confetti and the Polkadot version.
@@ -136,16 +136,15 @@ open
 
 ## Restore an account
 
-1. Follow the instructions to learn how to restore your account from the mnemonic. Select **Resource Account**, once so successful you should see your restored address as
-follows:
+1. Follow the instructions to edit the `restore.ts` file to learn how to restore your account from the mnemonic. Select **Resource Account**, once so successful you should see your restored address as follows:
 
     ![Graphical user interface, text, application, email Description automatically generated](./images/media/image25.png)
 
-2. Select the navigation button **Estimate  fees**.
+2. Select the navigation button **Estimate  transaction fees**.
 
 ## Estimate Transaction Fees
 
-1. Follow the instructions. When complete you should see something like:
+1. Follow the instructions to edit the `estimate.ts` file. When complete you should see something like:
 
     ![Graphical user interface, text, application, email Description automatically generated](./images/media/image26.png)
 
@@ -153,7 +152,7 @@ follows:
 
 ## Get the Balance
 
-1. Follow the instructions, then select **Check Balance**, when complete you should see something like:
+1. Follow the instructions to edit the `balance.ts` file, then select **Check Balance**, when complete you should see something like:
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image27.png)
 
@@ -161,7 +160,7 @@ follows:
 
 ## Existential Deposit
 
-1. Follow the instructions, then select **Get Existentical Deposit**. When complete you should see something like:
+1. Follow the instructions to edit the `deposit.ts`, then select **Get Existentical Deposit**. When complete you should see something like:
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image28.png)
 
@@ -169,7 +168,7 @@ follows:
 
 ## Transfer Some Tokens
 
-1. Follow the instructions, then select **Submit Transfer**. When complete you should see something like:
+1. Follow the instructions to edit the `transfer.ts`, then select **Submit Transfer**. When complete you should see something like:
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image29.png)
 

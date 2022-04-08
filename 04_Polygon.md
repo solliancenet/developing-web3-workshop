@@ -26,7 +26,7 @@ In this lab you will:
 
 1. Read the overview instructions that appear for the Pathway. This first step does not require you to make any code changes, it's just an overview of the approach so you know what to expect.
 
-2. When you've finished reading the overview, look for a large navigation button labeled **Setup the Project** near the bottom right of the Sample Browser panel and select that.
+2. When you've finished reading the overview, look for a large navigation button labeled **Setup the Project** near the bottom right of the **Simple Browser** panel and select that.
 
     ![Graphical user interface, text, application Description automatically generated](./images/media/image60.png)
 
@@ -49,7 +49,7 @@ Metamask for XYZ**
 
 5. Follow the instructions after your download.  Be sure that you add the **Mumbai testnet** to the Metamask wallet.
 
-6. Next you will need to get your DataHub API keys. In this step, right click the **Signup for DataHub** link and select to open that in new tab in your browser.
+6. Next you will need to get your DataHub API keys. In this step, right click the **Signup for DataHub** [link](https://datahub.figment.io/signup) and select to open that in new tab in your browser.
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image11.png)
 
@@ -73,9 +73,9 @@ Metamask for XYZ**
 
 12. When you have copied the key, you will need to create a `.env.local` file in which to store it. Follow these steps:
 
-    1. From the left treeview of the Gitpod environment under the root folder /learn-web3-dapp locate the file `.env.example`.
+    1. From the left treeview of the Gitpod environment under the root folder `/learn-web3-dapp` locate the file `.env.example`.
 
-    2. Right click the file and select **Rename**. Change the name to just `.env.local`
+    2. Right click the file and select **Rename**. Change the name to `.env.local`
 
     3. Double click the `.env.local` file to open it in a new editor panel.
 
@@ -87,27 +87,29 @@ Metamask for XYZ**
 
 14. Select the navigation button **Connect to Polygon** to continue.
 
-    > NOTE: You may need to re-open your metamask wallet to provide the permission access.
-
 ## Connect to Polygon
 
-1. Follow the instructions. When complete you should see something like:
+1. Follow the instructions to edit the `connect.ts` file. When complete you should see something like:
 
     ![Graphical user interface, text Description automatically generated](./images/media/image64.png)
+
+    > NOTE: You may need to re-open your metamask wallet to provide the permission access. You can do this by browsing to the browser extension and logging into the metamask account.
 
 2. Select the navigation button **Query Polygon** to continue.
 
 ## Query Polygon
 
-1. Follow the instructions. When complete you should see something like:
+1. Follow the instructions to edit the `query.ts` file. When complete you should see something like:
 
     ![Graphical user interface, text, application Description automatically generated](./images/media/image65.png)
+
+    > NOTE: You may need to click the **Query Polygon** button more than once
 
 2. Select the navigation button **Fund a Polygon account** to continue.
 
 ## Fund a Polygon account
 
-1. Follow the instructions. When complete you should see something like:
+1. Follow the instructions to edit the `balance.ts` file. When complete you should see something like:
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image66.png)
 
@@ -115,7 +117,7 @@ Metamask for XYZ**
 
 ## Transfer some MATIC
 
-1. Follow the instructions. You should be prompted with MetaMask to confirm the transfer. Select **Confirm** after making sure the source address is your address.
+1. Follow the instructions to edit the `transfer.ts` file. You should be prompted with MetaMask to confirm the transfer. Select **Confirm** after making sure the source address is your address.
 
     ![Graphical user interface, text, application Description automatically generated](./images/media/image67.png)
 
@@ -127,7 +129,7 @@ Metamask for XYZ**
 
 ## Deploy a Solidity Smart Contract
 
-1. Follow the instructions. When prompted to install truffle, you can use bash from within GitPod. To do so follow these steps:
+1. Follow the instructions to edit the `transfer.ts` file. When prompted to install truffle, you can use bash from within GitPod. To do so follow these steps:
 
    1. In the terminal area (bottom quarter of the GitPod UI), select the bash item (if you do not have the `bash` window, select **+->Bash**).
 
@@ -153,9 +155,11 @@ Metamask for XYZ**
         yarn
         ```
 
-3. Open the file `contracts/polygon/SimpleStorage/.secret.example`. Copy your private key from meta mask as instructed and paste it into .secret.example. Then rename the file to just `.secret`.
+2. Be sure that you renamed the `.secret.example` file and copied your metamask private key into it
 
-4. When prompted to open a separate terminal window to run the truffle development blockchain, follow these steps to split the current bash
+    - You can get your private key by opening the metamask, then selecting the vertical ellipses and then select **Account Details**, then select **Export Private Key**.
+
+3. When prompted to open a separate terminal window to run the truffle development blockchain, follow these steps to split the current bash
 window:
 
    1. Hover over bash near the right of the terminal window.
@@ -168,9 +172,11 @@ window:
 
         ```javascript
         truffle develop
+
+        truffle test
         ```
 
-5. When you get to the section titled **Deploy the smart contract**, you'll want to make one change to the truffle configuration before following the instructions to deploy the smart contract to the Mumbai test network. You need to specify the gas price you are willing to pay for the deployment. If you do not set this value, you will get a long error that near the top indicates "transaction underpriced". Follow these steps:
+4. When you get to the section titled **Deploy the smart contract**, you'll want to make one change to the truffle configuration before following the instructions to deploy the smart contract to the Mumbai test network. You need to specify the gas price you are willing to pay for the deployment. If you do not set this value, you will get a long error that near the top indicates "transaction underpriced". Follow these steps:
 
    1. Open the `/contracts/polygon/SimpleStorage/truffle-config.js` file
 
@@ -193,11 +199,19 @@ window:
             }
         ```
 
-4. When you have migrated your smart contract, which causes the deployment to the Mumbai test network, the output will provide the smart contract address.
+5. When you have migrated your smart contract, which causes the deployment to the Mumbai test network, the output will provide the smart contract address.
 
-5. Copy the contract address value
+    - Run the following:
 
-6. Paste it into the contact address textbox and select **Check deployment**. Success should look similar to the following:
+        ```bash
+        truffle compile
+
+        truffle migrate --network matic
+        ```
+
+6. Copy the contract address value shown in the output of the bash window
+
+7. Paste it into the contact address textbox and select **Check deployment**. Success should look similar to the following:
 
     ![Graphical user interface, text application, email Description automatically generated](./images/media/image72.png)
 
@@ -205,20 +219,20 @@ window:
     Example address: 0x11ef085603162a59AB28CA66A59da6E9b8eC28Fb
     ```
 
-7. Select the navigation button **Set the storage of the contract** to continue.
+8. Select the navigation button **Set the storage of the contract** to continue.
 
 ## Set the storage of the contract
 
-1. Follow the instructions. After completing the code changes, provide a new value to store and select Set Value. You should see results similar
+1. Follow the instructions to edit the `setter.ts` file. After completing the code changes, provide a new value to store and select **Set Value**. You should see results similar
 to the following:
 
     ![Graphical user interface, text, application, chat or text message Description automatically generated](./images/media/image73.png)
 
-2. Select the navigation button Get the storage of the contract to continue.
+2. Select the navigation button **Get the storage of the contract** to continue.
 
 ## Get the storage of the contract
 
-1. Follow the instructions. After completing the code changes, select **Get Value**. You should see results similar to the following:
+1. Follow the instructions to edit the `getter.ts` file. After completing the code changes, select **Get Value**. You should see results similar to the following:
 
     ![](./images/media/image74.png)
 
@@ -227,4 +241,4 @@ to the following:
 ## Restore your account
 
 If you have reached this step in the lab, congratulations you have completed the pathway! You can optionally choose to restore your wallet
-from the mnemonic, but only do this if you are using a test wallet not associated with any actual crypto assets.
+from the mnemonic, **but only do this if you are using a test wallet not associated with any actual crypto assets**.
