@@ -71,17 +71,17 @@ Metamask for XYZ**
 
 11. Be sure to select **Polygon** as the protocol when creating your app in DataHub!
 
-12. When you have copied the key, you will need to create a `.env` file in which to store it. Follow these steps:
+12. When you have copied the key, you will need to create a `.env.local` file in which to store it. Follow these steps:
 
     1. From the left treeview of the Gitpod environment under the root folder /learn-web3-dapp locate the file `.env.example`.
 
-    2. Right click the file and select **Rename**. Change the name to just `.env`
+    2. Right click the file and select **Rename**. Change the name to just `.env.local`
 
-    3. Double click the `.env` file to open it in a new editor panel.
+    3. Double click the `.env.local` file to open it in a new editor panel.
 
     ![Graphical user interface, application Description automatically generated](./images/media/image16.png)
 
-13. Paste your key as the value for the `DATAHUB_POLYGON_API_KEY` variable then close the `env` tab.
+13. Paste your key as the value for the `DATAHUB_POLYGON_API_KEY` variable then close the `env.local` tab.
 
     > NOTE: Whenever the instructions tell you edit code, look for the code file in the Explorer tree view just as you did for the .env.example file.
 
