@@ -115,7 +115,7 @@ Metamask for XYZ**
 
 ## Transfer some MATIC
 
-1. Follow the instructions. You should be prompted with MetaMask to confirm the transfer. Select **Confirm** after making sure the source address your address.
+1. Follow the instructions. You should be prompted with MetaMask to confirm the transfer. Select **Confirm** after making sure the source address is your address.
 
     ![Graphical user interface, text, application Description automatically generated](./images/media/image67.png)
 
