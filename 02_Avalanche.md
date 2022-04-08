@@ -8,7 +8,7 @@ In this lab you will:
 
 🔌 Connect to Avalanche with a Javascript library
 
-🏦 Creat an account by generating a keypair and funding the resulting address by using the AVAX faucet
+🏦 Create an account by generating a keypair and funding the resulting address by using the AVAX faucet
 
 💸 Transfer tokens between accounts
 
@@ -58,19 +58,19 @@ In this lab you will:
     - Select **View key**
     - Copy the key
 
-6. When you have copied the key, you will to create a `.env` file in which to store it. Follow these steps:
+6. When you have copied the key, you will to create a `.env.local` file in which to store it. Follow these steps:
 
    1. Switch back to the gitpod.
 
    2. From the left treeview of the Gitpod environment under the root folder /learn-web3-dapp locate the `.env.example` file.
 
-   3. Right click the file and select **Rename**. Change the name to just `.env`
+   3. Right click the file and select **Rename**. Change the name to just `.env.local`
 
-   4. Double click the .env file to open it in a new editor panel.
+   4. Double click the .env.local file to open it in a new editor panel.
 
     ![Graphical user interface, application Description automatically generated](./images/media/image16.png)
 
-7. Paste your key as the value for the `DATAHUB_AVALANCHE_API_KEY` and close the `.env` tab.
+7. Paste your key as the value for the `DATAHUB_AVALANCHE_API_KEY` and close the `.env.local` tab.
 
     > NOTE: Whenever the instructions tell you edit code, look for the code file in the Explorer tree view just as you did for the `.env.example` file.
 
