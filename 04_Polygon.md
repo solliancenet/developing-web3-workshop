@@ -153,7 +153,9 @@ Metamask for XYZ**
         yarn
         ```
 
-2. When prompted to open a separate terminal window to run the truffle development blockchain, follow these steps to split the current bash
+3. Open the file `contracts/polygon/SimpleStorage/.secret.example`. Copy your private key from meta mask as instructed and paste it into .secret.example. Then rename the file to just `.secret`.
+
+4. When prompted to open a separate terminal window to run the truffle development blockchain, follow these steps to split the current bash
 window:
 
    1. Hover over bash near the right of the terminal window.
@@ -168,7 +170,7 @@ window:
         truffle develop
         ```
 
-3. When you get to the section titled **Deploy the smart contract**, you'll want to make one change to the truffle configuration before following the instructions to deploy the smart contract to the Mumbai test network. You need to specify the gas price you are willing to pay for the deployment. If you do not set this value, you will get a long error that near the top indicates "transaction underpriced". Follow these steps:
+5. When you get to the section titled **Deploy the smart contract**, you'll want to make one change to the truffle configuration before following the instructions to deploy the smart contract to the Mumbai test network. You need to specify the gas price you are willing to pay for the deployment. If you do not set this value, you will get a long error that near the top indicates "transaction underpriced". Follow these steps:
 
    1. Open the `/contracts/polygon/SimpleStorage/truffle-config.js` file
 
