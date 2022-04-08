@@ -1,6 +1,6 @@
-# Crypto Workshop
+# Developing Web3 Workshop
 
-Welcome to the Blockchain intersection Crypto Workshop conference!
+Welcome to the Blockchain Intersection conference! 
 
 This workshop consists of the following labs:
 
